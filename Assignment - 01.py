@@ -57,7 +57,7 @@ print(len(text))
 l_one = [1, 2, [3, 4]]
 l_two = [1, 2, {'k1': 4}]
 l_one[2][0] >= l_two[2]['k1']
-answer=bool(l_one[2][0])
+answer=bool(l_one[2][0] >= l_two[2]['k1'])
 print("Question 7 :")
 print(answer)
 
@@ -67,4 +67,4 @@ d = {"k1": {'nest_key': ['this is deep', ['hello']]}}
 the_key = d["k1"]
 my_key = the_key['nest_key']
 print("Question 8 :")
-print(my_key[1])
+print(my_key[1][0])
